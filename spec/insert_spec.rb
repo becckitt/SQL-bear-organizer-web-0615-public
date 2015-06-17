@@ -14,3 +14,14 @@ describe 'populating the bears table' do
     expect(@db.execute("SELECT COUNT(*) FROM bears WHERE name IS NULL;").flatten[0]).to eq(1)
   end
 end
+
+
+# CREATE TABLE bears (
+#   id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   name TEXT,
+#   age INTEGER,
+#   gender TEXT,
+#   color TEXT,
+#   temperament TEXT,
+#   alive boolean
+# );
